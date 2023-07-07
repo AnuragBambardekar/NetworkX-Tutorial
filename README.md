@@ -3,3 +3,4 @@
 - Nodes and Edges
 - Constructing Graphs
 - Shortest Path
+- Centrality
