@@ -29,7 +29,15 @@ print(nx.degree_centrality(G))
 print(nx.betweenness_centrality(G)) # x is important
 
 print(nx.density(G)) # The density is 0 for a graph without edges and 1 for a complete graph. 
-print(nx.diameter(G)) # longest - shortest path
+print(nx.diameter(G)) # Diameter = longest - shortest path
+print(list(nx.eulerian_path(G))) # Eulerian path
+print(list(nx.find_cliques(G))) # Returns all maximal cliques in an undirected graph.
+
+# nx.k_core(G)
+
+# Bridges - edges that when deleted increase the number of components
+
+print(list(nx.bridges(G)))
 
 nx.draw_spring(G, with_labels=True)
 plt.show()
